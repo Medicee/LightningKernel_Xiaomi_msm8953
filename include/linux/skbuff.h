@@ -3257,7 +3257,7 @@ static inline ktime_t net_timedelta(ktime_t t)
 
 static inline ktime_t net_invalid_timestamp(void)
 {
-	return 0;
+	return ktime_set(0, 0);
 }
 
 struct sk_buff *skb_clone_sk(struct sk_buff *skb);
